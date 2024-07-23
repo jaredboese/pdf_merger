@@ -15,10 +15,13 @@ def create_watermark(text):
     can = canvas.Canvas(packet, pagesize=A4)
     font_path = os.path.join(basedir, 'ipaexg.ttf')
     pdfmetrics.registerFont(TTFont('IPAexGothic', font_path))
+    can.setFont('IPAexGothic', 12)  
+    can.drawString(400, 50, text)  # 位置設定する
+    # Examples:
     # can.setFont('IPAexGothic', 10)  # For Amazon kindle book
     # can.drawString(410, 755, text)  # For Amazon kindle book
-    can.setFont('IPAexGothic', 8)   # For Amazon
-    can.drawString(435, 753, text)  # For Amazon
+    # can.setFont('IPAexGothic', 8)   # For Amazon
+    # can.drawString(435, 753, text)  # For Amazon
     can.save()
     packet.seek(0)
     return PdfReader(packet)
