@@ -24,7 +24,8 @@ This tool allows you to add a watermark to PDF files using a custom font.
     ```
 
 2. Select the PDF files you want to watermark. (Can Select multipe files via shift+click)
-3. Choose the output file name and location.
+3. Choose Templates which will decide where the text is written (Currently have Amazon and Kindle)
+4. Choose the output file name and location.
 
 ## Building an Executable with PyInstaller (If you want to have it as an executable)
 
