@@ -59,6 +59,6 @@ if __name__ == '__main__':
         defaultextension=".pdf"
     )
 
-    watermark_text = '株式会社GA Technologies'  
+    watermark_text = '株式会社GA technologies'
 
     merge_pdfs(pdf_files, output_pdf, watermark_text)
