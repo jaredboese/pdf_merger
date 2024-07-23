@@ -16,7 +16,7 @@ def create_watermark(text):
     font_path = os.path.join(basedir, 'ipaexg.ttf')
     pdfmetrics.registerFont(TTFont('IPAexGothic', font_path))
     can.setFont('IPAexGothic', 12)  
-    can.drawString(400, 50, text)  # 一位設定する
+    can.drawString(400, 50, text)  # 位置設定する
     can.save()
     packet.seek(0)
     return PdfReader(packet)
